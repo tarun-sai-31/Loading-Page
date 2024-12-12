@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: url(backgroundimage.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+header { 
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    color: #4708f1;
+    font-size: 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+header .navigation a {
+    color: #000;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 3px 15px;
+    border-radius: 20px;
+    transition: background 0.3s;
+}
+
+header .navigation a:not(:last-child) {
+    margin-right: 20px;
+}
+
+header .navigation a:hover {
+    background-color: #fff;
+}
+
+section {
+    width: 1000px;
+    margin: 60px auto;
+}
+
+section h1, section h2 {
+    margin-bottom: 15px;
+}
+
+section p {
+    font-size: 1.2em;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.about-text {
+    flex: 1 1 48%;
+    padding: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.card-content h3 {
+    margin-bottom: 10px;
+}
+
+.card-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.card-content ul li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.card-content ul li i {
+    color: #50b3a2;
+    margin-right: 10px;
+}
+
+.service img {
+    max-width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.column {
+    flex: 1 1 30%;
+    padding: 20px;
+    background: #fff;
+    margin: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 7px;
+}
+
+.cc{
+    height: 250px;
+    width: px;
+    border-radius: 10px;
+}
+
+.column h3 {
+    margin-bottom: 10px;
+}
+
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.7); 
+    padding: 5px;
+}
+
+footer a {
+    color: #fff;
+    font-size: 30px;
+    margin: 0 15px;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+footer a:hover {
+    color: #50b3a2;
+    transform: scale(1.5); 
+}
